@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Countdown </title>
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- MODAL -->
+    <div class="modal" id="register_modal">
+        <div class="backdrop"></div>
+        <form>
+            <h1>Want to be notified of the launch? Then sign up!</h1>
+            <div class="input-wrapper">
+                <label for="username">Your name</label>
+                <input type="text" id="username" placeholder="Richard Rasmussen">
+            </div>
+            <div class="input-wrapper">
+                <label for="email">Your email</label>
+                <input type="email" id="email" placeholder="richard.rasmussen@example.com.br">
+            </div>
+            <input class="button" type="button" value="Register">
+        </form>
+    </div>
+
+    <!-- COUNTDOWN PAGE -->
+    <main id="main">
+        <img src="images/top-image.svg" alt="wave shape" class="top main-shape">
+        <img src="images/bottom-image.svg" alt="wave shape" class="bottom main-shape">
+
+        <div class="left-wrapper">
+            <h1 class="title">
+                Ready to launch in...
+            </h1>
+            <div class="time-left">
+                <div class="block">
+                    <span class="label">Days</span>
+                    <span class="days time" id="days">08</span>
+                </div>
+                <div class="block">:</div>
+                <div class="block">
+                    <span class="label">Hours</span>
+                    <span class="days time" id="hours">12</span>
+                </div>
+                <div class="block">:</div>
+                <div class="block">
+                    <span class="label">Minutes</span>
+                    <span class="days time" id="minutes">44</span>
+                </div>
+                <div class="block">:</div>
+                <div class="block">
+                    <span class="label">Seconds</span>
+                    <span class="days time" id="seconds">28</span>
+                </div>
+            </div>
+            <p class="desc">Sign up to learn more about the launch</p>
+            <button class="button" id="register_button">Sign up</button>
+        </div>
+        <div class="right-wrapper">
+            <img src="images/rocket.svg" alt="rocket illustration" class="rocket">
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
